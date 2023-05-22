@@ -1,4 +1,6 @@
-# Python에서의 Regular Expression과 Garbage Collection
+# Python에서의 Regular Expression
+
+![BigData_Cover](https://github.com/hayeon/myMusic/assets/81798537/f358118a-1f49-46a9-8772-6ded13302bf4)
 
 ## Regular Expression 
 
@@ -23,16 +25,14 @@
     - [백 슬래시 \\](#백슬래시-b)
 4. [정규식 예제 문제](#예제문제)
 
-## Regular Expression 
 
 <br/>
 <br/>
 <br/>
+
 
 ---
 ## 정규 표현식(Regular Expressions)의 개념
-
-<br/>
 
 > (1)<B> 정규 표현식(Regular Expressions)</B>은 복잡한 문자열을 처리할 때 사용하는 기법으로, 문자열을 처리하는 모든 언어에서 사용합니다. <p> (2) 문자열에서 원하는 패턴을 찾거나, 대체하거나, 추출하는 등의 다양한 문자열 처리 작업을 수행할 수 있습니다. <p>(3) 줄여서 <B>"정규식"</B>이라고도 말합니다.
 
@@ -110,8 +110,7 @@ kim 010-****-8888
 ---
 ## 정규 표현식(Regular Expressions)의 기본 문법
 <br/>
-<br/>
-<br/>
+
 
 ## 메타문자(meta characters)의 종류
 > 메타문자란? 특별한 용도로 사용하는 문자를 말합니다.
@@ -521,7 +520,7 @@ for r in result: print(r)
 \\section
 ```
 
- 문자가 문자열 자체임을 알려 주기 위해, 백슬래시 2개를 사용하여 이스케이프 처리를 합니다.
+문자가 문자열 자체임을 알려 주기 위해, 백슬래시 2개를 사용하여 이스케이프 처리를 합니다.
 따라서 위 정규식을 컴파일하려면 다음과 같이 작성해야합니다.
 
 
@@ -529,7 +528,7 @@ for r in result: print(r)
 >>> p = re.compile('\\section')
 ```
 
-### 그러나, 실제로 컴파일하면 파이썬 문자열 리터럴 규칙에 따라 <b>\\이 \ </b> 로 변경되어 \section이 전달됩니다. <p> <em>결국 정규식 엔진에 \\ 문자를 전달하기 위해 파이썬은 \\\\ 백슬래시를 4개를 사용해야합니다. </em>
+> 그러나, 실제로 컴파일하면 파이썬 문자열 리터럴 규칙에 따라 <b>\\이 \ </b> 로 변경되어 \section이 전달됩니다. <p> <em>결국 정규식 엔진에 \\ 문자를 전달하기 위해 파이썬은 \\\\ 백슬래시를 4개를 사용해야합니다. </em>
 
 <br/>
 
@@ -538,14 +537,14 @@ for r in result: print(r)
 ```
 <br/>
 
-### 이러한 문제를 해결하기 위해  Raw String을 사용합니다.
+>이러한 문제를 해결하기 위해  Raw String을 사용합니다.
 
 ```python
 >>> p = re.compile(r'\\section')
 ```
 
 
-> ### 정규식 문자열 앞에 r 문자를 삽입하면 이 정규식은 Raw String 규칙에 의해, 백슬래시 2개 대신 1개만 써도 2개를 쓴 것과 동일한 의미를 갖게 됩니다. <p>
+> 정규식 문자열 앞에 r 문자를 삽입하면 이 정규식은 Raw String 규칙에 의해, 백슬래시 2개 대신 1개만 써도 2개를 쓴 것과 동일한 의미를 갖게 됩니다. <p>
 ### <em> + 만약 백슬래시를 사용하지 않는 정규식이라면, r의 유무에 상관없이 동일한 정규식이 됩니다. </em>
 <br/>
 <br/>
@@ -557,7 +556,7 @@ for r in result: print(r)
 
 <br/>
 
-> ### 정규식의 예제문제는 백준의 예제 문제를 사용했습니다. 풀이와 문제는 해당 파일을 참고해주세요.
+> ### [정규식의 예제문제는 백준의 예제 문제를 사용했습니다. 풀이와 문제는 해당 파일을 참고해주세요.](https://github.com/hayeon/BigData_Project/tree/main/reqular_expression_ex)
 
 <br/>
 <br/>
