@@ -1,6 +1,6 @@
 # Python에서의 Regular Expression
 
-![BigData_Cover](https://github.com/hayeon/myMusic/assets/81798537/f358118a-1f49-46a9-8772-6ded13302bf4)
+![제목을-입력해주세요_-001 (1)](https://github.com/hayeon/Coin_Tracker/assets/81798537/1c4d8b54-fe63-400d-a986-b48c8cd4911b)
 
 ## Regular Expression 
 
